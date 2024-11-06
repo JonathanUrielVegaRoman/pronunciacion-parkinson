@@ -1,0 +1,13 @@
+{
+    "build": {
+      "builder": "Nixpacks",
+      "nixpacks": {
+        "runtime": "python",
+        "python_version": "3.11.9" 
+      }
+    },
+    "start": {
+      "command": "python app.py"
+    }
+  }
+  
