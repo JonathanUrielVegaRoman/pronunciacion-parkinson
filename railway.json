@@ -3,11 +3,14 @@
       "builder": "Nixpacks",
       "nixpacks": {
         "runtime": "python",
-        "python_version": "3.11.9" 
+        "python_version": "3.11.9",
+        "dockerfilePath": "Dockerfile"
       }
     },
     "start": {
       "command": "python app.py"
     }
+      
+      
   }
   
