@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Análisis de Audio</h1>
+
+    <div class="upload-box" id="uploadBox">
+        <p>Arrastra y suelta un archivo de audio aquí o</p>
+        <label for="audioFile">Selecciona un archivo</label>
+        <input type="file" id="audioFile" accept="audio/*">
+    </div>
+
+    <button id="analyzeBtn">
+        Analizar
+    </button>
+
+    <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Archivo</th>
+            <th>Jitter</th>
+            <th>Shimmer</th>
+            <th>Frecuencia Fundamental</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="result-container">
+        <div id="resultMessage" class="result-message"></div>
+        <div id="executionTime" class="time">
+            Tiempo de ejecución: <span class="resultTime" id="timeValue"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

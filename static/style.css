@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-box {
+  width: 50%;
+  margin: 20px auto;
+  padding: 40px;
+  border: 2px dashed #3498db;
+  background-color: white;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.upload-box.dragover {
+  border-color: #2ecc71;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.upload-box label {
+  display: block;
+  cursor: pointer;
+  color: #3498db;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  display: none;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Resultados */
+.status-message {
+margin-top: 20px;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+}
+
+.status-message.success {
+color: green;
+}
+
+.status-message.error {
+color: red;
+}
+
+/* Resultados y tiempo */
+/* Caja para resultados */
+.result-message, .time {
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #3498db; /* Borde azul */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 15px; /* Espaciado interno */
+  margin-top: 20px; /* Separación superior */
+  width: 80%; /* Ancho de la caja */
+  margin-left: auto; /* Centrar */
+  margin-right: auto; /* Centrar */
+  text-align: center; /* Centrar texto */
+}
+.result-container {
+  display: flex; /* Usar flexbox para alinear elementos */
+  justify-content: space-between; /* Separar elementos a los lados */
+  align-items: center; /* Alinear verticalmente al centro */
+  margin-top: 20px; /* Separación superior */
+  width: 80%; /* Ancho del contenedor */
+  margin-left: auto; /* Centrar */
+  margin-right: auto; /* Centrar */
+  margin-bottom: 10px;
+}
+
+/* Estilo para resultados y tiempo de ejecución */
+.result-message, .time {
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #3498db; /* Borde azul */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 15px; /* Espaciado interno */
+  width: 48%; /* Ancho de cada caja */
+  text-align: center; /* Centrar texto */
+}
+
+/* Mensajes de estado */
+.result-message.success {
+  color: green; /* Color para mensajes de éxito */
+}
+
+.result-message.error {
+  color: red; /* Color para mensajes de error */
+}
+
+/* Estilo para el tiempo de ejecución */
+.time {
+  font-weight: bold; /* Negrita */
+}
+
+/* Estilo para el tiempo de ejecución resaltado */
+.time span {
+  font-weight: 500; /* Negrita moderada */
+  text-decoration: underline; /* Subrayar */
+  color: #3498db; /* Color azul para resaltar */
+}
+
+/* Adaptación para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .result-container {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      align-items: center; /* Centrar elementos */
+  }
+
+  .result-message, .time {
+      width: 100%; /* Hacer que ocupen todo el ancho */
+      
+  }
+}
